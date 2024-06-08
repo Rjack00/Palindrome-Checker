@@ -1,6 +1,5 @@
 const textInput = document.getElementById("text-input");
 const checkButton = document.getElementById("check-btn");
-const userText = textInput.value;
 
 const isItAPalindrome = (text) => {
     const regex = /\w/;
@@ -14,4 +13,6 @@ const isItAPalindrome = (text) => {
     };
 }
 
-checkButton.addEventListener("click", () => {alert(`Text value: ${userText}`)});
+checkButton.addEventListener("click", () => {
+    alert(`Text value: ${textInput.value}`);
+});
